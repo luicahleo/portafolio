@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style="" lang="zxx"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
+</style><style>.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+</style><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
+</style><link type="text/css" rel="stylesheet" href="event_files/css.css"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
+</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
+</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Glaxdu - Education Bootstrap 4 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/assets/img/favicon.png">
+    
+    <!-- CSS
+	============================================ -->
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="event_files/bootstrap.css">
+    
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="event_files/icons.css">
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="event_files/plugins.css">
+    
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="event_files/style.css">
+    
+    <!-- Modernizer JS -->
+    <script src="event_files/modernizr-2.js"></script>
+<script type="text/javascript" charset="UTF-8" src="event_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="event_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="event_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="event_files/marker.js"></script><script type="text/javascript" charset="UTF-8" src="event_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="event_files/onion.js"></script><script type="text/javascript" charset="UTF-8" src="event_files/ViewportInfoService.GetViewportInfo"></script><script type="text/javascript" charset="UTF-8" src="event_files/vt_002"></script><script type="text/javascript" charset="UTF-8" src="event_files/controls.js"></script><script type="text/javascript" charset="UTF-8" src="event_files/AuthenticationService.Authenticate"></script><script type="text/javascript" charset="UTF-8" src="event_files/QuotaService.RecordEvent"></script><script type="text/javascript" charset="UTF-8" src="event_files/vt"></script></head>
+
+<body>
+<header class="header-area">
+    <div class="header-top bg-img" style="background-image:url(assets/img/icon-img/header-shape.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-12 col-sm-8">
+                    <div class="header-contact">
+                        <ul>
+                            <li><i class="fa fa-phone"></i> +98 558 547 589</li>
+                            <li><i class="fa fa-envelope-o"></i><a href="#">education@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-12 col-sm-4">
+                    <div class="login-register">
+                        <ul>
+                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/login-register.html">Login</a></li>
+                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/login-register.html">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom sticky-bar clearfix stick">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-4">
+                    <div class="logo">
+                        <a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index.html">
+                            <img alt="" src="event_files/logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-6 col-8">
+                    <div class="menu-cart-wrap">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index.html"> HOME </a>
+                                        <ul class="submenu">
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index.html">home version 1</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index-2.html">home version 2</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index-3.html">home version 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/about-us.html"> ABOUT  </a></li>
+                                    <li class="mega-menu-position top-hover"><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html"> SHOP <i class="fa fa-angle-down"></i> </a>
+                                        <ul class="mega-menu">
+                                            <li>
+                                                <ul>
+                                                    <li class="mega-menu-title"><a href="#">Categories 01</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">bag</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pen</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Erasers</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Glue sticks</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Lunchbox </a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pencil box </a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="mega-menu-title"><a href="#">Categories 02</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">bag</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pen</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Erasers</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Glue sticks</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Lunchbox </a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pencil box </a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="mega-menu-title"><a href="#">Categories 03</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">bag</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pen</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Erasers</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Glue sticks</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Lunchbox </a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pencil box </a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="mega-menu-title"><a href="#">Categories 04</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">bag</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pen</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Erasers</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Glue sticks</a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Lunchbox </a></li>
+                                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pencil box </a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"> PAGES <i class="fa fa-angle-down"></i> </a>
+                                        <ul class="submenu">
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/course.html">course page</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/event.html">event page</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">shop page</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/course-details.html">course details</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/event-details.html">event details</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/single-product.html">single product</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/cart.html">cart page</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/checkout.html">checkout</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/wishlist.html">wishlist</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/login-register.html">login / register</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/course.html"> COURSES / PROGRAMMES</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/blog.html"> BLOG </a>
+                                        <ul class="submenu">
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/blog.html">blog</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/blog-details.html">blog details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/contact.html"> CONTACT </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="cart-search-wrap">
+                            <div class="cart-wrap">
+                                <button class="icon-cart">
+                                    <i class="fa fa-cart-plus"></i>
+                                    <span class="count-style">02</span>
+                                </button>
+                                <div class="shopping-cart-content">
+                                    <ul>
+                                        <li class="single-shopping-cart">
+                                            <div class="shopping-cart-img">
+                                                <a href="#"><img alt="" src="event_files/cart-1.png"></a>
+                                            </div>
+                                            <div class="shopping-cart-title">
+                                                <h4><a href="#">Color Box </a></h4>
+                                                <h6>Qty: 02</h6>
+                                                <span>$260.00</span>
+                                            </div>
+                                            <div class="shopping-cart-delete">
+                                                <a href="#"><i class="fa fa-times-circle"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="single-shopping-cart">
+                                            <div class="shopping-cart-img">
+                                                <a href="#"><img alt="" src="event_files/cart-2.png"></a>
+                                            </div>
+                                            <div class="shopping-cart-title">
+                                                <h4><a href="#">Color Box </a></h4>
+                                                <h6>Qty: 02</h6>
+                                                <span>$260.00</span>
+                                            </div>
+                                            <div class="shopping-cart-delete">
+                                                <a href="#"><i class="fa fa-times-circle"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="shopping-cart-total">
+                                        <h4>Shipping : <span>$20.00</span></h4>
+                                        <h4>Total : <span class="shop-total">$260.00</span></h4>
+                                    </div>
+                                    <div class="shopping-cart-btn">
+                                        <a class="default-btn btn-hover" href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/cart.html">view cart</a>
+                                        <a class="default-btn btn-hover" href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/checkout.html">checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-search">
+                                <button class="search-toggle">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                <div class="search-content">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search">
+                                        <button>
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-area">
+                <div class="mobile-menu">
+                    <nav id="mobile-menu-active" style="display: block;">
+                        <ul class="menu-overflow">
+                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index.html">HOME</a>
+                                <ul>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index.html">home version 1</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index-2.html">home version 2</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index-3.html">home version 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/about-us.html">About</a></li>
+                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Shop</a>
+                                <ul>
+                                    <li><a href="#">Categories 01</a>
+                                        <ul>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">bag</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pen</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Erasers</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Glue sticks</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Lunchbox </a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pencil box </a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Categories 02</a>
+                                        <ul>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">bag</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pen</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Erasers</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Glue sticks</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Lunchbox </a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pencil box </a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Categories 03</a>
+                                        <ul>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">bag</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pen</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Erasers</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Glue sticks</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Lunchbox </a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pencil box </a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Categories 04</a>
+                                        <ul>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">bag</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pen</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Erasers</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Glue sticks</a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Lunchbox </a></li>
+                                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">Pencil box </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pages</a>
+                                <ul>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/course.html">course page</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/event.html">event page</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/shop.html">shop page</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/course-details.html">course details</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/event-details.html">event details</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/single-product.html">single product</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/cart.html">cart page</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/checkout.html">checkout</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/wishlist.html">wishlist</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/login-register.html">login / register</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/about-us.html">About us</a></li>
+                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/blog.html">Blog</a>
+                                <ul>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/blog.html">blog</a></li>
+                                    <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/blog-details.html">blog details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="breadcrumb-area">
+    <div class="breadcrumb-top default-overlay bg-img breadcrumb-overly-2 pt-100 pb-95" style="background-image:url(assets/img/bg/breadcrumb-bg-2.jpg);">
+        <div class="container">
+            <h2>Event Details</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+        </div>
+    </div>
+    <div class="breadcrumb-bottom">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a> <span><i class="fa fa-angle-double-right"></i>Event Details</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="event-details-area pt-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8">
+                <div class="event-left-wrap mr-40">
+                    <div class="event-description">
+                        <div class="description-date-social mb-45">
+                            <div class="description-date-time">
+                                <div class="description-date">
+                                    <span class="event-date">1st</span>
+                                    <span>Dec</span>
+                                </div>
+                                <div class="description-meta-wrap">
+                                    <div class="description-meta">
+                                        <i class="fa fa-location-arrow"></i>
+                                        <span>Mascot Plaza ,Uttara</span>
+                                    </div>
+                                    <div class="description-meta">
+                                        <i class="fa fa-clock-o"></i>
+                                        <span>10:30 am</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description-social-wrap">
+                                <div class="description-social">
+                                    <ul>
+                                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="description-btn">
+                                    <a href="#"><i class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="event_files/event-details.jpg" alt="">
+                        <h3>Lorem ipsum doloeiusmod tempor incididunt ut labore et dolore magnnisi ut aliquip ex ea commodo consequ.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+ laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla 
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis 
+unde omnis iste natus error sit voluptatem accu antium dolorem 
+laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en
+ ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
+quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+consectetur, adipisci velit, sed quia non numquam eius modi tempora 
+incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <div class="event-gallery text-center mt-40">
+                            <div class="event-gallery-active nav-style-3 owl-carousel owl-loaded owl-drag">
+                                
+                                
+                            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1720px, 0px, 0px); transition: all 0s ease 0s; width: 5160px;"><div class="owl-item cloned" style="width: 830px; margin-right: 30px;"><img src="event_files/event-gallery-1.jpg" alt=""></div><div class="owl-item cloned" style="width: 830px; margin-right: 30px;"><img src="event_files/event-gallery-2.jpg" alt=""></div><div class="owl-item active" style="width: 830px; margin-right: 30px;"><img src="event_files/event-gallery-1.jpg" alt=""></div><div class="owl-item" style="width: 830px; margin-right: 30px;"><img src="event_files/event-gallery-2.jpg" alt=""></div><div class="owl-item cloned" style="width: 830px; margin-right: 30px;"><img src="event_files/event-gallery-1.jpg" alt=""></div><div class="owl-item cloned" style="width: 830px; margin-right: 30px;"><img src="event_files/event-gallery-2.jpg" alt=""></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                            <h4>View Our Event Gallery</h4>
+                        </div>
+                        <div class="seat-book-wrap bg-img mt-80 " style="background-image:url(assets/img/event/seat-book.jpg);">
+                            <div class="seat-book-title text-center">
+                                <h3>Book Your Seat Now</h3>
+                                <p> natus error sit voluptatem accu 
+antium dolorem laudantium, totam rem aperiam, eaque entore veritatis et 
+quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                            <div class="seat-book-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <input placeholder="Name" type="text">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input placeholder="Email" type="email">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input name="name" placeholder="Date" type="text">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input placeholder="Time" type="text">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <textarea placeholder="Message"></textarea>
+                                            <button class="seat-book-btn" type="submit">BOOK NOW</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="location-area mt-80">
+                            <div id="location" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;" class="gm-style"><div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;" tabindex="0"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -12, -8);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -12, -8);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;"></div></div></div><div style="width: 21px; height: 32px; overflow: hidden; position: absolute; left: -11px; top: -33px; z-index: 0;"><img style="position: absolute; left: 0px; top: 0px; user-select: none; width: 21px; height: 32px; border: 0px none; padding: 0px; margin: 0px; max-width: none;" alt="" src="event_files/2.png" draggable="false"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -12, -8);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="event_files/vt_007.png"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="event_files/vt_002.png"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="event_files/vt_004.png"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="event_files/vt.png"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="event_files/vt_003.png"></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="event_files/vt_008.png"></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="event_files/vt_005.png"></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="event_files/vt_006.png"></div></div></div></div><div style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;" class="gm-style-pbc"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div style="width: 21px; height: 32px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -11px; top: -32px; z-index: 0;" title="Snazzy!"><img style="position: absolute; left: 0px; top: 0px; user-select: none; width: 21px; height: 32px; border: 0px none; padding: 0px; margin: 0px; max-width: none;" alt="" src="event_files/2.png" draggable="false"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: medium none;" frameborder="0"></iframe><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a style="position: static; overflow: visible; float: none; display: inline;" target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=40.709896,-73.995481&amp;z=11&amp;t=m&amp;hl=es-ES&amp;gl=US&amp;mapclient=apiv3" title="Abre esta zona en Google Maps (se abre en una nueva ventana)"><div style="width: 66px; height: 26px; cursor: pointer;"><img style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px none; padding: 0px; margin: 0px;" alt="" src="event_files/google_white5.png" draggable="false"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 265px; top: 64px;"><div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Datos de mapas</div><div style="font-size: 13px;">Datos de mapas ©2020 Google</div><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;" draggable="false" title="Cerrar" aria-label="Cerrar" type="button" class="gm-ui-hover-effect"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 235px; bottom: 0px; width: 151px;"><div draggable="false" style="user-select: none; height: 14px; line-height: 14px;" class="gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; display: none;">Datos de mapas</a><span>Datos de mapas ©2020 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Datos de mapas ©2020 Google</div></div><div class="gmnoprint gm-style-cc" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 149px; bottom: 0px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);" href="https://www.google.com/intl/es-ES_US/help/terms_maps.html" target="_blank" rel="noopener">Términos de uso</a></div></div><button style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;" draggable="false" title="Cambiar a la vista en pantalla completa" aria-label="Cambiar a la vista en pantalla completa" type="button" class="gm-control-active gm-fullscreen-control"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button><div draggable="false" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" class="gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Informar a Google acerca de errores en las imágenes o en el mapa de carreteras" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" href="https://www.google.com/maps/@40.709896,-73.995481,11z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3">Notificar un problema de Maps</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" style="margin: 10px; user-select: none; position: absolute; bottom: 95px; right: 40px;" draggable="false" controlwidth="40" controlheight="81"><div class="gmnoprint" style="position: absolute; left: 0px; top: 0px;" controlwidth="40" controlheight="81"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;" draggable="false" title="Ampliar" aria-label="Ampliar" type="button" class="gm-control-active"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23333%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23111%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;" draggable="false" title="Reducir" aria-label="Reducir" type="button" class="gm-control-active"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button></div></div><div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;"><div style="width: 40px; height: 40px;"><button style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none; border: 0px none; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;" draggable="false" title="Girar el mapa 90 grados" aria-label="Girar el mapa 90 grados" type="button" class="gm-control-active"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button><button style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;" draggable="false" title="Inclina el mapa" aria-label="Inclina el mapa" type="button" class="gm-tilt gm-control-active"><img style="width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img style="width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button></div></div></div></div></div><div style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;"><div><img alt="" src="event_files/google_gray.svg" style="padding: 0px; margin: 0px; border: 0px none; height: 17px; vertical-align: middle; width: 52px; user-select: none;" draggable="false"></div><div style="line-height: 20px; margin: 15px 0px;"><span style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">Esta página no puede cargar Google&nbsp;Maps correctamente.</span></div><table style="width: 100%;"><tr><td style="line-height: 16px; vertical-align: middle;"><a href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors" target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">¿Eres el propietario de este sitio web?</a></td><td style="text-align: right;"><button class="dismissButton">Aceptar</button></td></tr></table></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+                <div class="sidebar-style">
+                    <div class="sidebar-search mb-40">
+                        <div class="sidebar-title mb-40">
+                            <h4>Search</h4>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="sidebar-about mb-40">
+                        <div class="sidebar-title mb-15">
+                            <h4>About Us</h4>
+                        </div>
+                        <p>quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolors eos qui ratione voluptatem sad.</p>
+                        <a href="#"><img src="event_files/banner-4.jpg" alt=""></a>
+                        <div class="sidebar-social">
+                            <ul>
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-recent-post mb-35">
+                        <div class="sidebar-title mb-40">
+                            <h4>Recent Post</h4>
+                        </div>
+                        <div class="recent-post-wrap">
+                            <div class="single-recent-post">
+                                <div class="recent-post-img">
+                                    <a href="#"><img src="event_files/recent-post-1.jpg" alt=""></a>
+                                </div>
+                                <div class="recent-post-content">
+                                    <h5><a href="#">Blog title will be here.</a></h5>
+                                    <span>Blog Category</span>
+                                    <p>Datat non proident qui offici.hafw adec qart.</p>
+                                </div>
+                            </div>
+                            <div class="single-recent-post">
+                                <div class="recent-post-img">
+                                    <a href="#"><img src="event_files/recent-post-2.jpg" alt=""></a>
+                                </div>
+                                <div class="recent-post-content">
+                                    <h5><a href="#">Blog title will be here.</a></h5>
+                                    <span>Blog Category</span>
+                                    <p>Datat non proident qui offici.hafw adec qart.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-category mb-40">
+                        <div class="sidebar-title mb-40">
+                            <h4>Course Category</h4>
+                        </div>
+                        <div class="category-list">
+                            <ul>
+                                <li><a href="#">MBA <span>04</span></a></li>
+                                <li><a href="#">Graduate <span>08</span></a></li>
+                                <li><a href="#">Under Graduate <span>04</span></a></li>
+                                <li><a href="#">BBA <span>06</span></a></li>
+                                <li><a href="#">Engineering <span>04</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-recent-course-wrap mb-40">
+                        <div class="sidebar-title mb-40">
+                            <h4>Recent Courses</h4>
+                        </div>
+                        <div class="sidebar-recent-course">
+                            <div class="sin-sidebar-recent-course">
+                                <div class="sidebar-recent-course-img">
+                                    <a href="#"><img src="event_files/recent-post-1.jpg" alt=""></a>
+                                </div>
+                                <div class="sidebar-recent-course-content">
+                                    <h4><a href="#">Course Title</a></h4>
+                                    <ul>
+                                        <li>Credits : 125</li>
+                                        <li class="duration-color">Duration : 4yrs</li>
+                                    </ul>
+                                    <p>Datat non proident qui offici.hafw adec qart.</p>
+                                </div>
+                            </div>
+                            <div class="sin-sidebar-recent-course">
+                                <div class="sidebar-recent-course-img">
+                                    <a href="#"><img src="event_files/recent-post-2.jpg" alt=""></a>
+                                </div>
+                                <div class="sidebar-recent-course-content">
+                                    <h4><a href="#">Course Title</a></h4>
+                                    <ul>
+                                        <li>Credits : 125</li>
+                                        <li class="duration-color">Duration : 4yrs</li>
+                                    </ul>
+                                    <p>Datat non proident qui offici.hafw adec qart.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-tag-wrap">
+                        <div class="sidebar-title mb-40">
+                            <h4>Tag</h4>
+                        </div>
+                        <div class="sidebar-tag">
+                            <ul>
+                                <li><a href="#">Loremsite</a></li>
+                                <li><a href="#">Loreipsum</a></li>
+                                <li><a href="#">Dolar</a></li>
+                                <li><a href="#">Site ament dollar</a></li>
+                                <li><a href="#">Loremsite</a></li>
+                                <li><a href="#">Dummy Text</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="brand-logo-area pt-130 pb-130">
+    <div class="container">
+        <div class="brand-logo-active owl-carousel owl-loaded owl-drag">
+            
+            
+            
+            
+            
+            
+            
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1200px, 0px, 0px); transition: all 0s ease 0s; width: 3800px;"><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/2_002.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/3.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/4.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/5.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/6.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/2_002.png" alt=""></a>
+            </div></div><div class="owl-item active" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/1.png" alt=""></a>
+            </div></div><div class="owl-item active" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/2_002.png" alt=""></a>
+            </div></div><div class="owl-item active" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/3.png" alt=""></a>
+            </div></div><div class="owl-item active" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/4.png" alt=""></a>
+            </div></div><div class="owl-item active" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/5.png" alt=""></a>
+            </div></div><div class="owl-item active" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/6.png" alt=""></a>
+            </div></div><div class="owl-item" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/2_002.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/1.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/2_002.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/3.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/4.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/5.png" alt=""></a>
+            </div></div><div class="owl-item cloned" style="width: 170px; margin-right: 30px;"><div class="single-brand-logo">
+                <a href="#"><img src="event_files/6.png" alt=""></a>
+            </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+    </div>
+</div>
+<footer class="footer-area">
+    <div class="footer-top bg-img default-overlay pt-130 pb-80" style="background-image:url(assets/img/bg/bg-4.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget mb-40">
+                        <div class="footer-title">
+                            <h4>ABOUT US</h4>
+                        </div>
+                        <div class="footer-about">
+                            <p>Ugiat nulla pariatur. Edeserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natu</p>
+                            <div class="f-contact-info">
+                                <div class="single-f-contact-info">
+                                    <i class="fa fa-home"></i>
+                                    <span>Uttara, Dhaka, Bangladesh</span>
+                                </div>
+                                <div class="single-f-contact-info">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span><a href="#">education@email.com</a></span>
+                                </div>
+                                <div class="single-f-contact-info">
+                                    <i class="fa fa-phone"></i>
+                                    <span> +98 558 547 589</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget mb-40">
+                        <div class="footer-title">
+                            <h4>QUICK LINK</h4>
+                        </div>
+                        <div class="footer-list">
+                            <ul>
+                                <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/index.html">Home</a></li>
+                                <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/about-us.html">About Us</a></li>
+                                <li><a href="http://demo.hasthemes.com/glaxdu-v1/glaxdu/course.html">Courses</a></li>
+                                <li><a href="#">Admission</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget negative-mrg-30 mb-40">
+                        <div class="footer-title">
+                            <h4>COURSES</h4>
+                        </div>
+                        <div class="footer-list">
+                            <ul>
+                                <li><a href="#">Under Graduate Programmes </a></li>
+                                <li><a href="#">Graduate Programmes </a></li>
+                                <li><a href="#">Diploma Courses</a></li>
+                                <li><a href="#">Others Programmes</a></li>
+                                <li><a href="#">Short Courses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-widget mb-40">
+                        <div class="footer-title">
+                            <h4>GALLERY</h4>
+                        </div>
+                        <div class="footer-gallery">
+                            <ul>
+                                <li><a href="#"><img src="event_files/gallery-1.png" alt=""></a></li>
+                                <li><a href="#"><img src="event_files/gallery-2.png" alt=""></a></li>
+                                <li><a href="#"><img src="event_files/gallery-3.png" alt=""></a></li>
+                                <li><a href="#"><img src="event_files/gallery-4.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-widget mb-40">
+                        <div class="footer-title">
+                            <h4>News Latter</h4>
+                        </div>
+                        <div class="subscribe-style">
+                            <p>Dugiat nulla pariatur. Edeserunt mollit anim id est laborum. Sed ut perspiciatis unde</p>
+                            <div id="mc_embed_signup" class="subscribe-form">
+                                <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
+                                    <div id="mc_embed_signup_scroll" class="mc-form">
+                                        <input class="email" type="email" required="" placeholder="Your E-mail Address" name="EMAIL">
+                                        <div class="mc-news" aria-hidden="true">
+                                            <input type="text" tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
+                                        </div>
+                                        <div class="clear">
+                                            <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="SUBMIT">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom pt-15 pb-15">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="copyright">
+                        <p>
+                            Copyright ©
+                            <a href="#">GLAXDU</a>
+                            . All Right Reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="footer-menu-social">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Privecy &amp; Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions of Use</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="event_files/jquery-1.js"></script>
+<!-- Popper JS -->
+<script src="event_files/popper.js"></script>
+<!-- Bootstrap JS -->
+<script src="event_files/bootstrap.js"></script>
+<!-- Plugins JS -->
+<script src="event_files/plugins.js"></script>
+<!-- Ajax Mail -->
+<script src="event_files/ajax-mail.js"></script>
+<script src="event_files/js"></script>
+<script>
+    function init() {
+        var mapOptions = {
+            zoom: 11,
+            scrollwheel: false,
+            center: new google.maps.LatLng(40.709896, -73.995481),
+            styles: 
+            [
+                {
+                    "featureType": "all",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "weight": "2.00"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#9c9c9c"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#f2f2f2"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 45
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#7b7b7b"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#46bcec"
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#c8d7d4"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#070707"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                }
+            ]
+        };
+        var mapElement = document.getElementById('location');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(40.709896, -73.995481),
+            map: map,
+            icon: 'assets/img/icon-img/2.png',
+            animation:google.maps.Animation.BOUNCE,
+            title: 'Snazzy!'
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', init);
+</script>
+<!-- Main JS -->
+<script src="event_files/main.js"></script><a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="fa fa-angle-double-up"></i></a>
+
+
+
+</body></html>
